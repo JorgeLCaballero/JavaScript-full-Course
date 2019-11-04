@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      const jorge = {
+          nombre: 'jorge',
+          apellido:'caballero',
+          edad: 26
+      }
+
+      //const cumpleanos = persona => persona.edad
+
+      const cumpleanosInmutable = persona => ({
+        ...persona,
+        edad: persona.edad + 1
+      })
+
+    </script>
+  </body>
+</html>

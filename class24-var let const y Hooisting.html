@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var jorge ={
+        nombre: 'Jorge',
+        apellido: 'Caballero',
+        edad: 26
+      }
+
+      function esMayorDeEdad (persona){
+        let mensaje
+        const MAYORIA_DE_EDAD = 18
+        if (persona.edad > MAYORIA_DE_EDAD){
+          mensaje = 'Es mayor de edad'
+        } else {
+          mensaje = 'Es menor de edad'
+        }
+        console.log(mensaje)
+      }
+
+      //esMayorDeEdad(jorge)
+
+      for(var i = 0;i < 10; i++){
+        console.log(i)
+      }
+
+      console.log(`Termino el for, el valor de i es ${i}`)
+
+    </script>
+  </body>
+</html>

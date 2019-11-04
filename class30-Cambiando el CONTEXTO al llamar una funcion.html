@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      const jorge = {
+        nombre: 'jorge',
+        apellido: 'caballero',
+      }
+
+      const yesika = {
+        nombre: 'yesika',
+        apellido: 'cortes',
+      }
+
+      function saludar (saludo = 'Hola'){
+        console.log(`${saludo}, mi nombre es ${this.nombre}`)
+      }
+/*
+      const saludarAJorge = saludar.bind(jorge)
+      const saludarAYesika = saludar.bind(yesika)
+
+
+      setTimeout (saludar.bind(jorge, 'Hola che'), 1000)
+*/
+
+//saludar.call(jorge, 'Hola che')
+
+saludar.apply(jorge, ['Hola che', ])
+
+    </script>
+  </body>
+</html>
